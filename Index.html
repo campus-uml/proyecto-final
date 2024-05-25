@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My tienda en linea</title>
+    <link rel="stylesheet" type = "text/css" href="./assets/css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/estilo.css">
+    <script src="./assets/js/uikit.min.js"></script>
+    <script src="./assets/js/uikit-icons.min.js"></script>
+    <script src="./assets/js/custm.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="uk-container uk-nvbar" uk-navbar>
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active">
+                        <a href="#">
+                            <strong>
+                             Inicio
+                            </strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav uk-visible@s">
+                    <li>
+                        <a href="#">Entrar/Registro</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <button class="uk-button  uk-button-primary">
+                                Añadir articulo
+                            </button>
+                         </a>
+                        </li>
+                        <li>
+                            <a href="#search_modal" class="uk-navbar-toggle" uk-search-icon uk-toggle></a>
+                        </li>
+                    </ul>
+                    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target:#sidenav"></a>
+            </div>
+            <div id="search_modal" class="uk-modal-full uk-modal"uk-modal>
+                <div clase="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle"uk-height-viewport>
+                    <button class="uk-modal-close-full" type="button"uk-close></button>
+                    <form  class="uk-search uk-search-large" method="GET">
+                        <input type="text" name="q" class="uk-search-input uk-text-center" placeholder="busca el articulo preferido:
+                        ...." autofocus>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="sidenav" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                <ul class="uk-nav uk-nav-primary uk-margin-auto-vertical">
+                    <li class="uk-nav-header">
+                        <strong>INICIO</strong>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="uk-margin-small-right" uk-icon="icon: sign-in"></span>
+                            Entrar/Registro
+                        </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                           <span class="uk-margin-small-right"uk-icon="icon: plus"></span>
+                           Añadir artuculo
+                       </a> 
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+        <!--home slider--->
+        <div class="uk-section -uk-padding-remove-top">
+            <div class="uk-cover-container">
+                <canvas width="" height="600px"></canvas>
+                <img src="./assets/imagenes/moto1.png" uk-cover>
+                <video src="./assets/imagenes/video 1.mp4" autoplay loop muted playsinline uk-cover></video>
+                <div class="uk-position-large uk-position-center uk-overlay uk-overlay-primary uk-box-shadow-xlarge uk-border-rounded">
+                    <form >
+                        <div uk-grid>
+                            <div class="uk-width-1-1 uk-text-center">
+                                <h2>Encuentra tu articulo</h2>
+    
+                            </div>
+                            <div class="uk-width-1-2">
+                                <select class="uk-select">
+                                    <option selected="" desabled="" >Tipo de produccion</option>
+                                    <option>Compra</option>
+                                    <option >Rentar</option>
+                                    <OPtion>Remate</OPtion>
+                                </select>
+    
+                            </div>
+                            <div class="uk-width-1-2">
+                                <select class="uk-select">
+                                    <option selected="" desabled="" >clasificacion de producto</option>
+                                    <option>Veiculo</option>
+                                    <option >Repuestos</option>
+                                    <OPtion>Hogares</OPtion>
+                                </select>
+    
+                            </div>
+                            <div class="uk-width-1-1">
+                                <input  class="uk-input"type="text" name="addres" placeholder="Busca el articulo preferido por direccion de palabras claves">
+    
+                            </div>
+                            <div class="uk-width-1-1 ">
+                                <button class="uk-button uk-button-secondary uk-width-1-1 uk-text-bold">
+                                    Buscar
+                                </button>
+                            </div>
+    
+                        </div>
+
+
+                    </form>
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!--fin home slider--->
+        <!--articulos destacados-->
+            <div class="uk-selection uk-padding-remove-top uk-padding-remove-buttom">
+                <div class="uk-container">
+                    <h2 class="uk-heading-line uk-text-center">
+                        <span>Articulos destacados</span>
+                    </h2>
+                    <div class="uk-slider-container-offset uk-margin-medium-top" uk-slider>
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                            <ul class=" uk-slider-items uk-child-width-1-3@s  uk-grid">
+                                <li>
+                                   <div class="uk-card uk-card-default">
+                                       <p>hola</p>
+
+                                   </div> 
+                                   
+                                </li>
+                                <li>
+                                    <div class="uk-card uk-card-default">
+                                        <p>hola</p>
+ 
+                                    </div> 
+                                    
+                                 </li>
+                                 <li>
+                                    <div class="uk-card uk-card-default">
+                                        <p>hola</p>
+ 
+                                    </div> 
+                                    
+                                 </li>
+                                 <li>
+                                    <div class="uk-card uk-card-default">
+                                        <p>hola</p>
+ 
+                                    </div> 
+                                    
+                                 </li>
+
+                                
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+        <!--fin de articulos destacados-->
+
+    </main>
+    <footer id="footer" class="uk-backgrond-muted">
+        <div class="uk-container uk-padding">
+            <div class="uk-child-width-1-3@m uk-child-width-1-1@s"uk-grid>
+                <div>
+                    <h3 class="uk-heading-bullet">Acerca</h3>
+                    <a href="#">Moto repuestos López</a>
+                    <p>Visitanos no te arrepentiras nuestros precios son los mejores</p>
+                    <p>Estamos ubicados frente al juzado Municipal Mozonte Nuva Segovia</p>
+                </div>
+                <div>
+                    <h3 class="uk-heading-bullet">Últimos articulos</h3>
+                    <div class="uk-margin-small" uk-grid>
+                        <div class="uk-width-1-4">
+                            <img src="./assets/imagenes/moto1.png" alt="">
+                        </div>
+                        <div class="uk-width-expand">
+                            
+                            <p class="uk-margin-remove"><b>Nombre del articulo</b></p>
+                            <p class="uk-margin-remove">Descripcion</p>
+                            
+                        </div>
+                    </div>
+                    <div class="uk-margin-small" uk-grid>
+                        <div class="uk-width-1-4">
+                            <img src="./assets/imagenes/moto1.png" alt="">
+                        </div>
+                        <div class="uk-width-expand">
+                            <p class="uk-margin-remove"><b>Nombre del articulo</b></p>
+                            <p class="uk-margin-remove">Descripcion</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="uk-heading-bullet">Contactos</h3>
+                    <address>
+                        Mozonte Nueva Segovia <br>
+                        est.jumunoz@uml.edu.ni<br>
+                        8327-7842
+                    </address>
+                    <div>
+                        <form>
+                            <input type="email"name="email"class="uk-input uk-form-width-medium">
+                            <bottom class="uk-buttom uk-bottom-default">Enviar</bottom>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="uk-continer uk-container-expand uk-background-secondary uk-light uk-padding-remove">
+            <div class="uk-text-center uk-padding-small">
+                moto repuetos <strong  >López</strong> &copy; Todos los derchos reservados
+
+            </div>
+
+        </div>
+
+
+    </footer>
+ 
+</body>
+</html>
